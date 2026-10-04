@@ -1,6 +1,5 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
-500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
 *{box-sizing:border-box}html{scroll-behavior:smooth}
 body{margin:0;min-height:100vh;font-family:Inter,system-ui,sans-serif;line-height:1.55;overflow-x:hidden;background:#07080d;color:#f4f7ff}
 body:before{content:"";position:fixed;inset:-20%;z-index:-5;pointer-events:none;background:radial-gradient(circle at 15% 20%,#a77bff33,transparent 24%),radial-gradient(circle at 85% 15%,#ff9fc633,transparent 25%),radial-gradient(circle at 65% 85%,#66d8ff22,transparent 25%);filter:blur(25px);animation:drift 18s ease-in-out infinite alternate}
