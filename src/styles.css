@@ -60,3 +60,18 @@ body:after{background:linear-gradient(90deg,transparent 0 49.7%,#fff0 49.7% 50.3
 .nav nav button:after{content:"";position:absolute;left:0;right:100%;bottom:1px;height:1px;background:#e7c7ff;transition:.3s}
 .nav nav button:hover:after{right:0}
 .nav nav button:hover{background:transparent!important;color:#f4e8ff!important;transform:none!important}
+
+
+/* POST-LOGIN V4 — RESUME STUDIO */
+.workspace{min-height:calc(100vh - 72px);padding:42px clamp(18px,4vw,58px) 80px;background:radial-gradient(circle at 80% 15%,#c58dff14,transparent 28%),#0b0910}
+.workspace:before{content:"RESUME STUDIO";display:block;max-width:1480px;margin:0 auto 18px;color:#cda9ef;font:700 9px "Manrope";letter-spacing:.28em}
+.workspaceHead{max-width:1480px!important;padding:20px 24px!important;border:1px solid #e7c7ff25;border-radius:18px!important;background:linear-gradient(135deg,#17101fee,#0c0911dd)!important;box-shadow:0 20px 60px #0007!important}
+.workspaceHead h1{font-family:"Cormorant Garamond"!important;font-size:48px!important}.workspaceHead p{color:#b49ebd!important}
+.workGrid{max-width:1480px!important;grid-template-columns:minmax(330px,.72fr) minmax(0,1.28fr)!important;gap:20px!important}
+.tool,.result{border-radius:16px!important;border:1px solid #e7c7ff2b!important;background:linear-gradient(145deg,#19121fef,#0c0910f5)!important;box-shadow:0 25px 70px #0008!important}
+.tool{padding:26px!important}.tool h2{font-family:"Cormorant Garamond"!important;font-size:30px!important}
+.fields input,.fields textarea,.fields select{border-radius:9px!important;background:#08060b!important;border-color:#e7c7ff22!important}
+.fields textarea{min-height:300px!important}.result{position:relative;overflow:hidden!important;padding:30px!important}
+.result:before{content:"LIVE PREVIEW";position:absolute;top:18px;right:20px;color:#cda9ef;font:700 8px "Manrope";letter-spacing:.18em}
+.result pre{font-family:"Manrope"!important;font-size:12px!important;color:#eee5f3!important;line-height:2!important}
+.primary{background:linear-gradient(135deg,#f2dcff,#c18cff)!important;color:#160d20!important}
