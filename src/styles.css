@@ -75,3 +75,363 @@ body:after{background:linear-gradient(90deg,transparent 0 49.7%,#fff0 49.7% 50.3
 .result:before{content:"LIVE PREVIEW";position:absolute;top:18px;right:20px;color:#cda9ef;font:700 8px "Manrope";letter-spacing:.18em}
 .result pre{font-family:"Manrope"!important;font-size:12px!important;color:#eee5f3!important;line-height:2!important}
 .primary{background:linear-gradient(135deg,#f2dcff,#c18cff)!important;color:#160d20!important}
+
+
+
+/* =========================================================
+   RESUME BUILDER — POST LOGIN PREMIUM STUDIO
+   Dedicated styles for the actual resume editor UI.
+========================================================= */
+
+body{background:#08070c!important;color:#f7f3ff!important}
+body:before{background:
+ radial-gradient(circle at 8% 18%,#b57aff22,transparent 25%),
+ radial-gradient(circle at 92% 12%,#ff9fce18,transparent 23%),
+ radial-gradient(circle at 58% 82%,#6fe8ff12,transparent 27%)!important;filter:blur(55px)!important}
+body:after{background-image:linear-gradient(#ffffff05 1px,transparent 1px),linear-gradient(90deg,#ffffff05 1px,transparent 1px)!important;background-size:48px 48px!important;opacity:.25!important}
+
+/* Keep the premium top navigation visible */
+.site>.nav{position:sticky!important;top:12px!important;margin:12px auto 0!important;width:min(1220px,calc(100% - 32px))!important;height:68px!important;z-index:100!important}
+
+/* Main studio */
+.site>.workspace{
+ width:min(1480px,calc(100% - 32px))!important;
+ min-height:calc(100vh - 92px)!important;
+ margin:0 auto!important;
+ padding:42px 0 90px!important;
+ background:transparent!important;
+}
+
+/* Dashboard welcome header */
+.workspace .dashboardTop{
+ position:relative!important;
+ display:flex!important;
+ align-items:flex-end!important;
+ justify-content:space-between!important;
+ gap:30px!important;
+ padding:34px 38px!important;
+ margin-bottom:18px!important;
+ border:1px solid #d5b4ff25!important;
+ border-radius:26px!important;
+ background:
+  linear-gradient(135deg,#17111ff5,#0d0a12ef 55%,#17101eeb)!important;
+ box-shadow:0 30px 90px #0009, inset 0 1px #ffffff10!important;
+ overflow:hidden!important;
+}
+.workspace .dashboardTop:before{
+ content:"";position:absolute;right:-100px;top:-150px;width:420px;height:420px;
+ border-radius:50%;border:1px solid #d7b8ff20;
+ box-shadow:0 0 0 35px #d7b8ff05,0 0 0 70px #d7b8ff04;
+ pointer-events:none;
+}
+.workspace .dashboardTop:after{
+ content:"";position:absolute;left:0;bottom:0;width:42%;height:1px;
+ background:linear-gradient(90deg,#d9baff,transparent);opacity:.55;
+}
+.workspace .dashboardTop>div:first-child{position:relative;z-index:1}
+.workspace .dashboardTop .eyebrow{
+ display:inline-flex!important;
+ padding:7px 11px!important;
+ border:1px solid #c99aff35!important;
+ border-radius:999px!important;
+ background:#c99aff0b!important;
+ color:#d8b8ff!important;
+ letter-spacing:.22em!important;
+}
+.workspace .dashboardTop h1{
+ margin:17px 0 9px!important;
+ max-width:780px!important;
+ font:700 clamp(38px,5vw,68px)/.95 "Cormorant Garamond",serif!important;
+ letter-spacing:-.045em!important;
+ color:#fbf8ff!important;
+}
+.workspace .dashboardTop p{
+ margin:0!important;
+ max-width:650px!important;
+ color:#a79bb4!important;
+ font:500 12px/1.8 "Manrope",sans-serif!important;
+}
+
+/* Action cluster */
+.workspace .dashboardActions{
+ position:relative!important;
+ z-index:2!important;
+ display:flex!important;
+ align-items:center!important;
+ gap:9px!important;
+ flex-wrap:wrap!important;
+}
+.workspace .saveStatus{
+ display:inline-flex!important;
+ align-items:center!important;
+ gap:8px!important;
+ padding:10px 13px!important;
+ border:1px solid #7df0c044!important;
+ border-radius:999px!important;
+ background:#75e8bd09!important;
+ color:#9be8cc!important;
+ font:700 9px "Manrope"!important;
+}
+.workspace .saveStatus i{
+ width:7px;height:7px;border-radius:50%;background:#73e8b9;
+ box-shadow:0 0 14px #73e8b9;animation:resumePulse 2s ease-in-out infinite;
+}
+@keyframes resumePulse{50%{opacity:.35;transform:scale(.75)}}
+.workspace .dashboardActions .ghost{
+ border:1px solid #d5b4ff20!important;
+ border-radius:10px!important;
+ background:#ffffff05!important;
+}
+.workspace .dashboardActions .primary{
+ border-radius:11px!important;
+ padding:12px 17px!important;
+}
+
+/* Stats */
+.workspace .workspaceStats{
+ display:grid!important;
+ grid-template-columns:repeat(3,1fr)!important;
+ gap:10px!important;
+ margin:0 0 18px!important;
+}
+.workspace .workspaceStats>div{
+ position:relative!important;
+ min-height:118px!important;
+ padding:20px 22px!important;
+ border:1px solid #d5b4ff1d!important;
+ border-radius:18px!important;
+ background:linear-gradient(145deg,#120d19ed,#0b0910e8)!important;
+ box-shadow:0 18px 55px #0007!important;
+ overflow:hidden!important;
+ transition:.3s ease!important;
+}
+.workspace .workspaceStats>div:after{
+ content:"";position:absolute;right:-25px;bottom:-45px;width:110px;height:110px;
+ border-radius:50%;border:1px solid #d5b4ff15;
+}
+.workspace .workspaceStats>div:hover{transform:translateY(-4px)!important;border-color:#c99aff3d!important}
+.workspace .workspaceStats span{
+ display:block!important;
+ color:#81758d!important;
+ font:800 8px "Manrope"!important;
+ letter-spacing:.18em!important;
+}
+.workspace .workspaceStats b{
+ display:block!important;
+ margin-top:11px!important;
+ color:#f5effb!important;
+ font:700 22px "Cormorant Garamond",serif!important;
+}
+.workspace .workspaceStats small{
+ display:block!important;
+ margin-top:4px!important;
+ color:#72687c!important;
+ font:500 9px "Manrope"!important;
+}
+
+/* Editor shell */
+.workspace .editorShell{
+ display:grid!important;
+ grid-template-columns:215px minmax(0,1fr)!important;
+ min-height:690px!important;
+ border:1px solid #d5b4ff25!important;
+ border-radius:24px!important;
+ background:#0d0a11e8!important;
+ box-shadow:0 35px 100px #000a!important;
+ overflow:hidden!important;
+}
+.workspace .editorRail{
+ display:flex!important;
+ flex-direction:column!important;
+ gap:8px!important;
+ padding:22px 14px!important;
+ border-right:1px solid #d5b4ff1b!important;
+ background:linear-gradient(180deg,#15101bf5,#0b0910f8)!important;
+}
+.workspace .railBrand{
+ display:flex!important;
+ align-items:center!important;
+ gap:10px!important;
+ padding:7px 8px 21px!important;
+ margin-bottom:5px!important;
+ border-bottom:1px solid #ffffff0d!important;
+}
+.workspace .railBrand>span{
+ width:34px;height:34px;display:grid;place-items:center;
+ border-radius:10px 10px 10px 2px;
+ background:linear-gradient(135deg,#fff0fb,#c18cff,#6de2ff);
+ color:#160d20;font-weight:900;
+ box-shadow:0 10px 30px #a87cff45;
+}
+.workspace .railBrand b{display:block;color:#eee7f5;font:700 11px "Manrope"}
+.workspace .railBrand small{display:block;margin-top:3px;color:#776b83;font:500 8px "Manrope";letter-spacing:.12em;text-transform:uppercase}
+.workspace .railItem{
+ width:100%!important;
+ display:flex!important;
+ align-items:center!important;
+ gap:11px!important;
+ padding:12px 11px!important;
+ border:1px solid transparent!important;
+ border-radius:10px!important;
+ background:transparent!important;
+ color:#81758d!important;
+ text-align:left!important;
+ font:700 10px "Manrope"!important;
+}
+.workspace .railItem>span{
+ width:25px;height:22px;display:grid;place-items:center;
+ border-radius:6px;background:#ffffff05;color:#766a82;
+ font:700 8px "Manrope";
+}
+.workspace .railItem:hover{background:#ffffff06!important;color:#e9def2!important;transform:translateX(3px)!important}
+.workspace .railItem.active{
+ color:#f5eaff!important;
+ border-color:#c99aff2d!important;
+ background:linear-gradient(90deg,#c99aff14,#c99aff04)!important;
+ box-shadow:inset 3px 0 #c99aff!important;
+}
+.workspace .railItem.active>span{background:#c99aff1a;color:#d4adff}
+.workspace .railBottom{
+ display:flex!important;
+ align-items:center!important;
+ gap:9px!important;
+ margin-top:auto!important;
+ padding:14px 7px 5px!important;
+ border-top:1px solid #ffffff0d!important;
+}
+.workspace .miniAvatar{
+ flex:0 0 31px;width:31px;height:31px;display:grid;place-items:center;
+ border-radius:50%;background:linear-gradient(135deg,#d9b8ff,#8f62c7);
+ color:#1b1027;font:800 10px "Manrope";
+}
+.workspace .railBottom b{
+ display:block;max-width:135px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+ color:#d9d0df;font:700 8px "Manrope";
+}
+.workspace .railBottom small{display:block;margin-top:3px;color:#6f6478;font:500 7px "Manrope"}
+
+/* Editor pane */
+.workspace .editorPane{
+ min-width:0!important;
+ padding:30px!important;
+ background:radial-gradient(circle at 90% 5%,#c99aff09,transparent 30%)!important;
+}
+.workspace .paneHead{
+ display:flex!important;
+ align-items:flex-start!important;
+ justify-content:space-between!important;
+ gap:20px!important;
+ padding-bottom:21px!important;
+ margin-bottom:23px!important;
+ border-bottom:1px solid #ffffff0c!important;
+}
+.workspace .paneHead>div>span{
+ color:#b99ad4!important;
+ font:800 8px "Manrope"!important;
+ letter-spacing:.2em!important;
+}
+.workspace .paneHead h2{
+ margin:8px 0 5px!important;
+ color:#f5effb!important;
+ font:700 30px/1.1 "Cormorant Garamond",serif!important;
+}
+.workspace .paneHead p{
+ margin:0!important;color:#776d81!important;font:500 9px/1.6 "Manrope"!important;
+}
+.workspace .completion{
+ padding:7px 10px!important;
+ border:1px solid #72e8bc38!important;
+ border-radius:999px!important;
+ background:#72e8bc0a!important;
+ color:#83dfba!important;
+ font:800 8px "Manrope"!important;
+ letter-spacing:.15em!important;
+}
+
+/* Form */
+.workspace .formGrid{
+ display:grid!important;
+ grid-template-columns:repeat(2,minmax(0,1fr))!important;
+ gap:17px!important;
+}
+.workspace .formGrid label{
+ display:block!important;
+ min-width:0!important;
+}
+.workspace .formGrid label.full{grid-column:1/-1!important}
+.workspace .formGrid label>span{
+ display:block!important;
+ margin:0 0 7px!important;
+ color:#80748c!important;
+ font:800 8px "Manrope"!important;
+ letter-spacing:.15em!important;
+}
+.workspace .formGrid input,
+.workspace .formGrid textarea{
+ width:100%!important;
+ margin:0!important;
+ padding:13px 14px!important;
+ border:1px solid #d5b4ff1c!important;
+ border-radius:10px!important;
+ outline:none!important;
+ background:#08070ce8!important;
+ color:#eee8f5!important;
+ font:500 11px "Manrope"!important;
+ transition:.25s ease!important;
+}
+.workspace .formGrid textarea{min-height:185px!important;resize:vertical!important;line-height:1.7!important}
+.workspace .formGrid input::placeholder,.workspace .formGrid textarea::placeholder{color:#4f4657!important}
+.workspace .formGrid input:focus,.workspace .formGrid textarea:focus{
+ border-color:#c99aff70!important;
+ box-shadow:0 0 0 4px #c99aff0d,0 0 28px #a87cff0d!important;
+ background:#0b0910!important;
+}
+.workspace .aiRow{
+ display:flex!important;
+ align-items:center!important;
+ justify-content:space-between!important;
+ gap:12px!important;
+ margin-top:8px!important;
+ padding:11px 12px!important;
+ border:1px solid #c99aff16!important;
+ border-radius:10px!important;
+ background:#c99aff06!important;
+}
+.workspace .aiRow span{color:#746a7e!important;font:500 8px/1.5 "Manrope"!important}
+.workspace .aiRow .primary{margin-top:0!important;padding:8px 12px!important;font-size:8px!important;white-space:nowrap!important}
+
+/* Existing generic tool/result are not used for the Resume editor,
+   but keep them polished if a future section uses them. */
+.workspace .tool,.workspace .result{
+ border:1px solid #d5b4ff22!important;
+ border-radius:16px!important;
+ background:linear-gradient(145deg,#17101eee,#0c0911f4)!important;
+ box-shadow:0 25px 70px #0008!important;
+}
+
+/* Mobile */
+@media(max-width:900px){
+ .site>.workspace{width:calc(100% - 24px)!important;padding:28px 0 60px!important}
+ .workspace .dashboardTop{align-items:flex-start!important;flex-direction:column!important;padding:27px 23px!important}
+ .workspace .dashboardActions{width:100%!important}
+ .workspace .workspaceStats{grid-template-columns:1fr!important}
+ .workspace .editorShell{grid-template-columns:1fr!important}
+ .workspace .editorRail{display:grid!important;grid-template-columns:repeat(3,1fr)!important;border-right:0!important;border-bottom:1px solid #d5b4ff1b!important}
+ .workspace .railBrand{grid-column:1/-1!important}
+ .workspace .railBottom{display:none!important}
+}
+@media(max-width:600px){
+ .site>.workspace{width:calc(100% - 20px)!important}
+ .workspace .dashboardTop h1{font-size:42px!important}
+ .workspace .dashboardActions .saveStatus{width:100%!important;justify-content:center!important}
+ .workspace .dashboardActions{display:grid!important;grid-template-columns:1fr 1fr!important}
+ .workspace .dashboardActions .saveStatus{grid-column:1/-1!important}
+ .workspace .dashboardActions .primary{width:100%!important}
+ .workspace .editorPane{padding:20px 15px!important}
+ .workspace .formGrid{grid-template-columns:1fr!important}
+ .workspace .formGrid label.full{grid-column:auto!important}
+ .workspace .editorRail{grid-template-columns:1fr 1fr 1fr!important;padding:12px 8px!important}
+ .workspace .railItem{justify-content:center!important;padding:10px 5px!important}
+ .workspace .railItem>span{display:none!important}
+ .workspace .railBrand{padding-bottom:12px!important}
+}
