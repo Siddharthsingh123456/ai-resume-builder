@@ -52,3 +52,11 @@ body:after{background:linear-gradient(90deg,transparent 0 49.7%,#fff0 49.7% 50.3
 .navActions{gap:14px!important}.ghost{font-family:"Manrope"!important;text-transform:uppercase;letter-spacing:.08em}
 .primary{border-radius:4px 12px 4px 12px!important;padding:11px 17px!important}
 
+
+
+/* NAV FINAL — RESUME: vertical editorial tabs */
+.nav nav{display:flex!important;gap:18px!important;padding:0!important;border:0!important;background:transparent!important}
+.nav nav button{position:relative!important;padding:8px 0!important;border:0!important;border-radius:0!important;background:transparent!important;font-family:"Manrope"!important;font-size:9px!important;letter-spacing:.04em!important}
+.nav nav button:after{content:"";position:absolute;left:0;right:100%;bottom:1px;height:1px;background:#e7c7ff;transition:.3s}
+.nav nav button:hover:after{right:0}
+.nav nav button:hover{background:transparent!important;color:#f4e8ff!important;transform:none!important}
