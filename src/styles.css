@@ -435,3 +435,276 @@ body:after{background-image:linear-gradient(#ffffff05 1px,transparent 1px),linea
  .workspace .railItem>span{display:none!important}
  .workspace .railBrand{padding-bottom:12px!important}
 }
+
+
+/* =========================================================
+   FINAL RESUME STUDIO — WORLD-CLASS 3-PANE WORKSPACE
+   Explicitly targets the real post-login DOM.
+========================================================= */
+
+html,body,#root{min-height:100%!important}
+body{font-family:"Manrope",sans-serif!important;background:#07060b!important;color:#f8f4ff!important}
+body:before{
+ content:""!important;position:fixed!important;inset:-18%!important;z-index:-5!important;pointer-events:none!important;
+ background:
+ radial-gradient(circle at 12% 18%,#b67cff28,transparent 24%),
+ radial-gradient(circle at 86% 12%,#ff9ccc18,transparent 24%),
+ radial-gradient(circle at 62% 82%,#65dcff12,transparent 27%)!important;
+ filter:blur(60px)!important;
+ animation:studioAura 18s ease-in-out infinite alternate!important;
+}
+@keyframes studioAura{from{transform:translate3d(-1%,-1%,0) scale(1)}to{transform:translate3d(2%,1%,0) scale(1.08)}}
+
+.site>.workspace{
+ width:min(1540px,calc(100% - 44px))!important;
+ min-height:calc(100vh - 90px)!important;
+ margin:0 auto!important;
+ padding:30px 0 100px!important;
+ background:transparent!important;
+}
+
+/* Welcome command header */
+.workspace .dashboardTop{
+ position:relative!important;
+ display:flex!important;
+ align-items:center!important;
+ justify-content:space-between!important;
+ gap:32px!important;
+ min-height:210px!important;
+ margin:0 0 14px!important;
+ padding:34px 38px!important;
+ border:1px solid #d8b8ff2e!important;
+ border-radius:30px!important;
+ background:
+   radial-gradient(circle at 88% 20%,#c99aff14,transparent 25%),
+   linear-gradient(135deg,#17111ff8,#0d0912f5)!important;
+ box-shadow:0 30px 100px #000a,inset 0 1px #ffffff12!important;
+ overflow:hidden!important;
+}
+.workspace .dashboardTop:before{
+ content:"";position:absolute!important;right:-110px!important;top:-170px!important;
+ width:430px!important;height:430px!important;border-radius:50%!important;
+ border:1px solid #d9baff25!important;
+ box-shadow:0 0 0 38px #d9baff05,0 0 0 76px #d9baff03!important;
+ pointer-events:none!important;
+}
+.workspace .dashboardTop:after{
+ content:"";position:absolute!important;left:0!important;bottom:0!important;
+ width:46%!important;height:2px!important;
+ background:linear-gradient(90deg,#d7b5ff,#72dcff,transparent)!important;
+ opacity:.7!important;
+}
+.workspace .dashboardTop>div:first-child{position:relative!important;z-index:2!important}
+.workspace .dashboardTop .eyebrow{
+ display:inline-flex!important;align-items:center!important;
+ padding:7px 11px!important;margin:0!important;
+ border:1px solid #c99aff45!important;border-radius:999px!important;
+ background:#c99aff0c!important;color:#dfc8ff!important;
+ font:800 8px "Manrope"!important;letter-spacing:.22em!important;
+}
+.workspace .dashboardTop h1{
+ margin:16px 0 9px!important;
+ max-width:850px!important;
+ font:700 clamp(42px,5vw,70px)/.92 "Cormorant Garamond",serif!important;
+ letter-spacing:-.045em!important;color:#fffaff!important;
+}
+.workspace .dashboardTop p{
+ margin:0!important;max-width:690px!important;
+ color:#aa9eb8!important;font:500 12px/1.8 "Manrope",sans-serif!important;
+}
+.workspace .dashboardActions{
+ position:relative!important;z-index:3!important;
+ display:flex!important;align-items:center!important;justify-content:flex-end!important;
+ gap:8px!important;flex-wrap:wrap!important;
+}
+.workspace .saveStatus{
+ display:inline-flex!important;align-items:center!important;gap:8px!important;
+ padding:10px 13px!important;border:1px solid #6fe8b844!important;
+ border-radius:999px!important;background:#6fe8b90b!important;
+ color:#9beacb!important;font:800 9px "Manrope"!important;
+}
+.workspace .saveStatus i{width:7px!important;height:7px!important;border-radius:50%!important;background:#70e7b9!important;box-shadow:0 0 16px #70e7b9!important}
+.workspace .dashboardActions .ghost{
+ border:1px solid #d7b5ff26!important;border-radius:10px!important;
+ background:#ffffff06!important;color:#b7a9c5!important;
+}
+.workspace .dashboardActions .primary{
+ padding:12px 17px!important;border-radius:11px!important;
+ background:linear-gradient(135deg,#f4e5ff,#c48cff,#79dfff)!important;
+ color:#160d20!important;box-shadow:0 14px 35px #a87cff42!important;
+}
+
+/* Three metric cards */
+.workspace .workspaceStats{
+ display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;
+ gap:12px!important;margin:0 0 14px!important;
+}
+.workspace .workspaceStats>div{
+ position:relative!important;min-height:105px!important;padding:19px 21px!important;
+ border:1px solid #d5b4ff20!important;border-radius:18px!important;
+ background:linear-gradient(145deg,#15101cf2,#0c0910f0)!important;
+ box-shadow:0 18px 55px #0007!important;overflow:hidden!important;
+}
+.workspace .workspaceStats>div:before{
+ content:"";position:absolute!important;right:-35px!important;bottom:-55px!important;
+ width:130px!important;height:130px!important;border-radius:50%!important;
+ border:1px solid #d5b4ff13!important;
+}
+.workspace .workspaceStats span{display:block!important;color:#81758d!important;font:800 8px "Manrope"!important;letter-spacing:.17em!important}
+.workspace .workspaceStats b{display:block!important;margin-top:10px!important;color:#f7f0fb!important;font:700 23px "Cormorant Garamond",serif!important}
+.workspace .workspaceStats small{display:block!important;margin-top:3px!important;color:#756a80!important;font:500 9px "Manrope"!important}
+
+/* Real 3-pane editor */
+.workspace .editorShell{
+ display:grid!important;
+ grid-template-columns:220px minmax(0,1fr) minmax(390px,520px)!important;
+ min-height:760px!important;
+ border:1px solid #d7b5ff24!important;border-radius:26px!important;
+ background:#0c0910f2!important;box-shadow:0 38px 110px #000b!important;
+ overflow:hidden!important;
+}
+.workspace .editorRail{
+ display:flex!important;flex-direction:column!important;gap:7px!important;
+ padding:20px 13px!important;border-right:1px solid #d7b5ff18!important;
+ background:linear-gradient(180deg,#17101cf7,#0a080ef7)!important;
+}
+.workspace .railBrand{padding:7px 8px 20px!important;margin-bottom:5px!important;border-bottom:1px solid #ffffff0d!important}
+.workspace .railBrand>span{width:35px!important;height:35px!important;border-radius:11px 11px 11px 3px!important}
+.workspace .railItem{padding:12px 10px!important;border-radius:10px!important}
+.workspace .railBottom{margin-top:auto!important}
+
+/* Center editor */
+.workspace .editorPane{
+ min-width:0!important;padding:29px!important;
+ background:radial-gradient(circle at 90% 0,#c99aff0b,transparent 34%)!important;
+ border-right:1px solid #d7b5ff18!important;
+}
+.workspace .paneHead{padding-bottom:19px!important;margin-bottom:22px!important}
+.workspace .paneHead h2{font-size:31px!important}
+.workspace .formGrid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:16px!important}
+.workspace .formGrid label>span{color:#85788f!important}
+.workspace .formGrid input,.workspace .formGrid textarea{
+ border:1px solid #d5b4ff20!important;border-radius:11px!important;
+ background:#08070cf2!important;box-shadow:inset 0 1px #ffffff05!important;
+}
+.workspace .formGrid input:hover,.workspace .formGrid textarea:hover{border-color:#c99aff35!important}
+.workspace .formGrid input:focus,.workspace .formGrid textarea:focus{
+ border-color:#c99aff75!important;box-shadow:0 0 0 4px #c99aff0d,0 0 30px #a87cff12!important;
+}
+.workspace .aiRow{
+ border:1px solid #c99aff18!important;border-radius:12px!important;
+ background:linear-gradient(90deg,#c99aff08,#6fe8ff05)!important;
+}
+.workspace .aiButton{
+ border:1px solid #c99aff3d!important;border-radius:9px!important;
+ padding:9px 13px!important;background:linear-gradient(135deg,#e8d4ff,#b77dff)!important;
+ color:#1b0d28!important;font:800 8px "Manrope"!important;
+ white-space:nowrap!important;box-shadow:0 10px 25px #a87cff25!important;
+}
+.workspace .aiFeedback{
+ margin-top:18px!important;padding:15px!important;border:1px solid #6fe8b92a!important;
+ border-radius:13px!important;background:#6fe8b906!important;
+}
+.workspace .aiFeedback>span{font:800 8px "Manrope"!important;letter-spacing:.15em!important;color:#7de7bc!important}
+.workspace .aiFeedback p{color:#c9bfce!important;font:500 10px/1.7 "Manrope"!important}
+
+/* Live resume preview */
+.workspace .previewPane{
+ min-width:0!important;display:flex!important;flex-direction:column!important;
+ background:linear-gradient(180deg,#100c13f7,#08070cf8)!important;
+}
+.workspace .previewHead{
+ display:flex!important;align-items:center!important;justify-content:space-between!important;
+ padding:17px 20px!important;border-bottom:1px solid #d7b5ff18!important;
+ background:#100b14e8!important;
+}
+.workspace .previewHead>div>span{
+ display:block!important;color:#a88cc0!important;font:800 7px "Manrope"!important;letter-spacing:.2em!important;
+}
+.workspace .previewHead>div>b{
+ display:block!important;margin-top:4px!important;color:#f2eaf6!important;font:700 17px "Cormorant Garamond",serif!important;
+}
+.workspace .previewPrint{
+ border:1px solid #d7b5ff2b!important;border-radius:8px!important;
+ background:#ffffff06!important;color:#cfc0d8!important;padding:8px 11px!important;
+ font:700 8px "Manrope"!important;
+}
+.workspace .previewPrint:hover{background:#c99aff12!important;color:#fff!important}
+.workspace .resumePaper{
+ flex:1!important;margin:22px!important;padding:34px 32px!important;
+ min-height:650px!important;overflow:auto!important;
+ background:#fffdf9!important;color:#241d25!important;
+ border:1px solid #eadff0!important;border-radius:4px!important;
+ box-shadow:0 25px 70px #000b,0 0 0 1px #ffffff!important;
+}
+.workspace .resumeHeader{
+ display:flex!important;justify-content:space-between!important;gap:20px!important;
+ padding-bottom:18px!important;
+}
+.workspace .resumeHeader h1{
+ margin:0!important;color:#211a25!important;font:700 34px/1 "Cormorant Garamond",serif!important;
+ letter-spacing:-.035em!important;
+}
+.workspace .resumeHeader h2{
+ margin:6px 0 0!important;color:#76518d!important;font:700 9px "Manrope"!important;
+ text-transform:uppercase!important;letter-spacing:.14em!important;
+}
+.workspace .resumeContact{
+ display:flex!important;flex-direction:column!important;align-items:flex-end!important;gap:4px!important;
+ color:#756d77!important;font:500 7px "Manrope"!important;text-align:right!important;
+}
+.workspace .resumeRule{height:1px!important;background:linear-gradient(90deg,#b78cff,#dcbde9,transparent)!important;margin-bottom:20px!important}
+.workspace .resumePaper section{margin:0 0 19px!important}
+.workspace .resumePaper section h3{
+ margin:0 0 8px!important;color:#71458c!important;
+ font:800 8px "Manrope"!important;letter-spacing:.17em!important;
+}
+.workspace .resumePaper section p{
+ margin:0!important;color:#554d57!important;font:500 9px/1.75 "Manrope"!important;
+}
+.workspace .skillTags{display:flex!important;flex-wrap:wrap!important;gap:5px!important}
+.workspace .skillTags span{
+ padding:5px 7px!important;border:1px solid #d8c4e4!important;border-radius:999px!important;
+ background:#faf4ff!important;color:#654478!important;font:700 7px "Manrope"!important;
+}
+.workspace .placeholderSection>div{
+ padding:10px 0!important;border-top:1px solid #eee6f1!important;
+}
+.workspace .placeholderSection b{display:block!important;color:#332936!important;font:700 9px "Manrope"!important}
+.workspace .placeholderSection small{display:block!important;margin-top:4px!important;color:#817782!important;font:500 7px/1.5 "Manrope"!important}
+
+/* Subtle interactions */
+.workspace .editorShell>*{transition:border-color .25s ease,box-shadow .25s ease!important}
+.workspace .editorPane:hover{background:radial-gradient(circle at 88% 2%,#c99aff0d,transparent 38%)!important}
+.workspace .previewPane:hover{box-shadow:inset 0 0 60px #c99aff08!important}
+
+/* Responsive */
+@media(max-width:1180px){
+ .workspace .editorShell{grid-template-columns:200px minmax(0,1fr) 360px!important}
+ .workspace .resumePaper{margin:16px!important;padding:25px 22px!important}
+}
+@media(max-width:900px){
+ .site>.workspace{width:calc(100% - 24px)!important}
+ .workspace .dashboardTop{flex-direction:column!important;align-items:flex-start!important}
+ .workspace .dashboardActions{width:100%!important;justify-content:flex-start!important}
+ .workspace .workspaceStats{grid-template-columns:1fr!important}
+ .workspace .editorShell{grid-template-columns:1fr!important}
+ .workspace .editorRail{display:grid!important;grid-template-columns:repeat(3,1fr)!important;border-right:0!important;border-bottom:1px solid #d7b5ff18!important}
+ .workspace .railBrand{grid-column:1/-1!important}
+ .workspace .railBottom{display:none!important}
+ .workspace .previewPane{border-top:1px solid #d7b5ff18!important}
+}
+@media(max-width:600px){
+ .site>.workspace{width:calc(100% - 16px)!important}
+ .workspace .dashboardTop{padding:25px 20px!important}
+ .workspace .dashboardTop h1{font-size:43px!important}
+ .workspace .dashboardActions{display:grid!important;grid-template-columns:1fr 1fr!important}
+ .workspace .dashboardActions .saveStatus{grid-column:1/-1!important;justify-content:center!important}
+ .workspace .dashboardActions .primary{width:100%!important}
+ .workspace .editorPane{padding:19px 15px!important}
+ .workspace .formGrid{grid-template-columns:1fr!important}
+ .workspace .formGrid label.full{grid-column:auto!important}
+ .workspace .resumePaper{margin:12px!important;padding:24px 19px!important}
+ .workspace .resumeHeader{flex-direction:column!important}
+ .workspace .resumeContact{align-items:flex-start!important;text-align:left!important}
+}
