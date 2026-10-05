@@ -757,3 +757,19 @@ h1{background:linear-gradient(120deg,#fff 15%,color-mix(in srgb,var(--ai-accent)
 @keyframes particles{from{transform:translate3d(0,0,0)}to{transform:translate3d(35px,-70px,0)}}
 @media(max-width:700px){.nav{top:6px;margin:6px 10px;border-radius:15px}.ai-grid{background-size:48px 48px}.orb{filter:blur(70px);opacity:.16}.tool,.result{border-radius:18px!important}.themeToggle{width:36px;height:36px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;scroll-behavior:auto!important;transition:none!important}.scrollReveal{opacity:1;transform:none}}
+
+
+
+/* SIGNATURE THEME — EXECUTIVE RESUME / OBSIDIAN + CHAMPAGNE GOLD + BURGUNDY */
+:root{--brand:#e8c77a;--brand2:#fff0bd;--hot:#9f3348}
+body{background:radial-gradient(circle at 15% 8%,#e8c77a18,transparent 27%),radial-gradient(circle at 88% 25%,#9f33481b,transparent 25%),linear-gradient(135deg,#0b0907,#15100d 58%,#0b0809)!important}
+body:before{background:radial-gradient(circle at 20% 20%,#e8c77a25,transparent 24%),radial-gradient(circle at 82% 45%,#9f334822,transparent 27%)!important}
+.nav{background:#0c0907e8!important;border-color:#e8c77a2e!important;box-shadow:0 20px 70px #0009!important}
+.logo span,.footerLogo span{background:linear-gradient(135deg,#fff0bd,#e8c77a,#9f3348)!important;color:#20150a!important;box-shadow:0 0 30px #e8c77a35!important}
+.primary{background:linear-gradient(135deg,#fff0bd,#e8c77a 55%,#c18c3d)!important;color:#24180a!important;box-shadow:0 14px 40px #e8c77a24!important}
+.eyebrow,.featureGrid article span,.pricing article>span{color:#e8c77a!important}
+.hero h1{background:linear-gradient(100deg,#fff,#f4dfaa 52%,#c78a94)!important;-webkit-background-clip:text!important;background-clip:text!important;color:transparent!important}
+.cards article,.featureGrid article,.pricing article,.authCard,.tool,.result{background:linear-gradient(145deg,#1b1510e8,#0d0b0ae8)!important;border-color:#e8c77a20!important}
+.cards article:hover,.featureGrid article:hover,.pricing article:hover,.tool:hover,.result:hover{border-color:#e8c77a5c!important;box-shadow:0 30px 85px #000b,0 0 38px #e8c77a12!important}
+.pricing .featured{background:linear-gradient(145deg,#301a1f,#130d0e)!important;border-color:#9f334866!important}
+footer.premiumFooter{background:linear-gradient(180deg,#16100d,#090706)!important}
