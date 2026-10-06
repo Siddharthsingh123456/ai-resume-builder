@@ -963,3 +963,18 @@ footer{font-size:.78rem;padding-block:24px}
  .navResume{width:calc(100% - 12px)!important}.navResume .logo strong{font-size:12px!important}
  .navResume .navActions>*{flex:1 1 100%!important}.navResume .userChip{width:100%!important}
 }
+
+
+/* FINAL NAV VISIBILITY — MOBILE CLOSED UNTIL ☰ */
+@media (max-width:820px){
+  .nav>nav:not(.navOpen){display:none!important;visibility:hidden!important;opacity:0!important;pointer-events:none!important}
+  .nav>nav.navOpen{display:flex!important;visibility:visible!important;opacity:1!important;pointer-events:auto!important}
+  .nav>.mobileMenu{display:inline-flex!important;visibility:visible!important;opacity:1!important}
+  .nav>.navActions{display:none!important;visibility:hidden!important;opacity:0!important;pointer-events:none!important}
+  .nav:has(>nav.navOpen)>.navActions{display:flex!important;visibility:visible!important;opacity:1!important;pointer-events:auto!important}
+}
+@media (min-width:821px){
+  .nav>nav{display:flex!important;visibility:visible!important;opacity:1!important;pointer-events:auto!important}
+  .nav>.mobileMenu{display:none!important}
+  .nav>.navActions{display:flex!important;visibility:visible!important;opacity:1!important;pointer-events:auto!important}
+}
