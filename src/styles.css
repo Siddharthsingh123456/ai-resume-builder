@@ -811,3 +811,70 @@ footer{font-size:.78rem;padding-block:24px}
 @media(max-width:380px){.nav{width:calc(100% - 12px);padding-inline:8px}.hero,.content,.workspace,.auth,.stats,.cards,.featureGrid,.pricing{width:calc(100% - 12px)}.mobileMenu{width:40px;height:40px;flex-basis:40px}.heroVisual{transform:scale(.72);margin-block:-28px}.navActions>*{flex-basis:100%}}
 @media(hover:none){.nav button,.primary,.ghost,.mobileMenu{min-height:44px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+
+/* =========================================================
+   FINAL MOBILE NAV OVERRIDE
+   Desktop: normal navbar
+   Mobile/tablet: hamburger only until opened
+========================================================= */
+@media (max-width: 820px) {
+  .nav > nav {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+
+  .nav > nav.navOpen {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+  }
+
+  .nav > .mobileMenu {
+    display: inline-flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .nav > .navActions {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+
+  .nav:has(> nav.navOpen) > .navActions {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+  }
+
+  .nav > nav.navOpen button {
+    display: block !important;
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 821px) {
+  .nav > nav {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+  }
+
+  .nav > .mobileMenu {
+    display: none !important;
+  }
+
+  .nav > .navActions {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+  }
+}
