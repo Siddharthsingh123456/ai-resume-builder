@@ -445,7 +445,7 @@ function App() {
           NAVIGATION
       =================================================== */}
 
-      <header className="nav">
+      <header className="nav navResume">
 
         <button
           type="button"
